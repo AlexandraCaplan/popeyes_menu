@@ -1,0 +1,16 @@
+{
+  "name": "popeyes_menu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": "git+https://github.com/AlexandraCaplan/popeyes_menu.git",
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexandraCaplan/popeyes_menu/issues"
+  },
+  "homepage": "https://github.com/AlexandraCaplan/popeyes_menu#readme"
+}
