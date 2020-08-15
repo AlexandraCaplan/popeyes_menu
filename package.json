@@ -3,14 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": "https://github.com/rbi-learning/popeyes_menu.git",
+  "author": "<acaplan@rbi.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "pg": "^8.3.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": "git+https://github.com/AlexandraCaplan/popeyes_menu.git",
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlexandraCaplan/popeyes_menu/issues"
-  },
-  "homepage": "https://github.com/AlexandraCaplan/popeyes_menu#readme"
+    "start": "node index.js"
+  }
 }
