@@ -10,14 +10,14 @@ const handleClick = (event) => {
 
 
 const body = (event) => {
-  const x = Math.round(event.pageX);
-  const y = Math.round(event.pageY);
-  const path = event.path.find(item => item.dataset.trackingid === true); 
+  const pageX = Math.round(event.pageX);
+  const pageY = Math.round(event.pageY);
+  const path = event.path.find(item => item.dataset.trackingid !== undefined); 
   const theItemThatGotClicked = event.target;
   const howLongUserOnPage = Math.round(event.timestamp);
   const userId = localStorage.getItem('userId');
   const url = '/clicks';
-  await fetch(url, {
+  fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -27,7 +27,6 @@ const body = (event) => {
       user: userID,
     }),
   });
-  await tallyVotes();
 }
 
 
